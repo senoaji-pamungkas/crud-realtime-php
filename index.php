@@ -117,8 +117,8 @@ if (isset($_POST['simpan'])) {
                 include 'config.php';
 
                 $q = mysqli_query($conn, "SELECT * FROM tb_siswa ORDER BY id ASC");
+                $no = 1;
                 while ($d = mysqli_fetch_array($q)) {
-                    $no = 1;
                 ?>
                     <tr>
                         <td><?= $no++; ?></td>
